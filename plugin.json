@@ -1,0 +1,45 @@
+{
+  "type": "app",
+  "name": "Cluster",
+  "id": "grafana-cluster-app",
+
+  "pages": [
+    { "name": "Live stream", "component": "StreamPageCtrl", "role": "Editor"},
+    { "name": "Log view", "component": "LogsPageCtrl", "role": "Viewer"}
+  ],
+
+  "css": {
+    "dark":  "css/dark.css",
+    "light":  "css/light.css"
+  },
+
+  "info": {
+    "description": "Example app for Grafana",
+    "author": {
+      "name": "Raintank",
+      "url": "http://raintank.io"
+    },
+    "keywords": ["example app"],
+    "logos": {
+      "small": "src/img/small_logo.png",
+      "large": "src/img/large_logo.png"
+    },
+    "links": [
+      {"name": "Project site", "url": "https://github.com/grafana/example-app"},
+      {"name": "License & Terms", "url": "https://github.com/grafana/example-app/blob/master/LICENSE"}
+    ],
+    "version": "1.0.1",
+    "updated": "2015-02-10"
+  },
+
+  "includes": [
+    {"type": "dashboard", "name": "Cluster Dashboard", "path": "dashboards/example_app_dashboard.json"},
+    {"type": "panel", "name": "Example panel"},
+    {"type": "datasource", "name": "Cluster Api Datasource"}
+  ],
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ClusterApi",
+  "id": "cluster-api-datasource",
+  "type": "datasource",
+  "partials": {
+    "config": "public/app/plugins/datasource/simplejson/partials/config.html"
+  },
+  "staticRoot": ".",
+  "metrics": true,
+  "annotations": true,
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": []
+  }
+}
