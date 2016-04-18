@@ -3,9 +3,6 @@
   "private": true,
   "version": "1.0.2",
   "description": "",
-  "dependencies": {
-    "@etk/jsonrpc": "github:etk-pl/jsonrpc"
-  },
   "homepage": "https://github.com/grafana/example-app",
   "jspm": {
     "dependencies": {
